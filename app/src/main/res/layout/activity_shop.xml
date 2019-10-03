@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShopActivity"
+    android:padding="20dp">
+
+    <Button
+        android:id="@+id/buttonScan"
+        android:layout_width="131dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/shoppingCart"
+        android:layout_marginBottom="23dp"
+        android:background="@drawable/shop_buttons"
+        android:text="Scan iTEM"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/buttonPay"
+        android:layout_width="131dp"
+        android:layout_height="40dp"
+        android:layout_alignEnd="@+id/shoppingCart"
+        android:layout_alignTop="@+id/buttonScan"
+        android:background="@drawable/shop_buttons"
+        android:text="PROCEED TO PAY"
+        android:textColor="@color/white" />
+
+    <ListView
+        android:id="@+id/shoppingCart"
+        android:layout_width="308dp"
+        android:layout_height="210dp"
+        android:layout_centerInParent="true"
+        android:scrollbarAlwaysDrawHorizontalTrack="false" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/shoppingCart"
+        android:layout_centerHorizontal="true"
+        android:text="Shopping Cart"
+        android:textColor="@color/black"
+        android:textSize="24dp" />
+
+    <TextView
+        android:id="@+id/tvTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/shoppingCart"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4dp"
+        android:text="TOTAL:"
+        android:textSize="20dp"
+        android:textColor="@color/black"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="71dp"
+        android:layout_height="65dp"
+        android:layout_above="@+id/tvBalance"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/ic_logo" />
+    <TextView
+        android:id="@+id/tvBalance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:text="Account Balance: 2,001"
+        android:textSize="15sp" />
+</RelativeLayout>
